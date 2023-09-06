@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    color-scheme: dark;
+}
+
+div#root {
+    background-color: #11042a;
+}
+
+.hash-span {
+    margin-top: -100px;
+    padding-bottom: 100px;
+    display: block;
+}

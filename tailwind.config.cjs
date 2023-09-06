@@ -1,3 +1,5 @@
+const signature = "#2c6aef";
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: ["./src/**/*.{js,jsx}"],
@@ -5,9 +7,10 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                primary: "#caf0f8",
-                secondary: "#023e8a",
-                tertiary: "#03045e",
+                primary: "#00072d",
+                secondary: "#001c55",
+                tertiary: "#ffffff",
+                signature: signature,
                 "black-100": "#100c2c",
                 "black-200": "#090134",
                 "white-100": "#f3f3f3",
@@ -20,6 +23,7 @@ module.exports = {
             },
             backgroundImage: {
                 "landing-page": "url('/public/landing-page.webp')",
+                "signal-gradient": `-webkit-linear-gradient(90deg,${signature+"00"} 0%,${signature} 100%);`,
             },
         },
     },
