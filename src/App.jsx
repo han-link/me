@@ -1,6 +1,6 @@
 import {BrowserRouter} from "react-router-dom";
 
-import { Navbar, Landing } from "./components";
+import { Navbar, Landing, About } from "./components";
 
 export const App = () => {
     return (
@@ -9,7 +9,7 @@ export const App = () => {
                 <Navbar />
                 <Landing />
             </div>
-
+            <About />
         </BrowserRouter>
     )
 }
