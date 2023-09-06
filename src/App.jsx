@@ -1,6 +1,6 @@
 import {BrowserRouter} from "react-router-dom";
 
-import { Navbar, Landing, About } from "./components";
+import { Navbar, Landing, About, Tech } from "./components";
 
 export const App = () => {
     return (
@@ -10,6 +10,7 @@ export const App = () => {
                 <Landing />
             </div>
             <About />
+            <Tech />
         </BrowserRouter>
     )
 }
