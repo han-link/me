@@ -10,7 +10,7 @@ permissions:
   statuses: write
 
 jobs:
-  test-and-build:
+  build:
 
     runs-on: ubuntu-latest
 
