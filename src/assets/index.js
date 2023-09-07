@@ -1,5 +1,9 @@
 import menu from './menu.svg'
 import close from './close.svg'
+import person from './file-person.svg'
+import project from './kanban.svg'
+import contact from './envelope.svg'
+
 import web from './web.png'
 import backend from './backend.png'
 
@@ -19,6 +23,7 @@ import bootstrap from './tech/bootstrap.svg'
 export {
     menu,
     close,
+    person,
     web,
     backend,
     css,
@@ -32,5 +37,7 @@ export {
     mariaDb,
     python,
     angular,
-    bootstrap
+    bootstrap,
+    project,
+    contact
 }
