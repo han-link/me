@@ -41,7 +41,7 @@ const About = () => {
         <>
             <motion.div variants={textVariant()}>
                 <p className="sm:text-[18px] text-[14px] text-tertiary uppercase tracking-wider">Introduction</p>
-                <h2 className="sm:text-[18px] text-[14px] text-tertiary uppercase tracking-wider">Overview.</h2>
+                <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">Overview.</h2>
             </motion.div>
 
             <motion.p

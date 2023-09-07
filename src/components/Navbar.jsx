@@ -1,24 +1,23 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import {menu} from '../assets';
+import {menu, close} from '../assets';
 import {navLinks} from '../constants';
 
-export const Navbar = ({ active, setIsOpen }) => {
+export const Navbar = ({ active, setActive, setIsOpen, isOpen }) => {
     return (
-        <nav className="sm:px-16 px-6 w-full flex items-center py-5 fixed top-0 z-20 bg-primary">
+        <nav className="fixed top-0 sm:px-16 px-6 w-full flex items-center py-5 z-20 bg-primary">
             <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-                <Link
-                    to='/'
+                <button
                     className='flex items-center gap-2'
                     onClick={() => {
                         setActive("");
+                        setIsOpen(false);
                         window.scrollTo(0, 0);
                     }}
                 >
                     <p className="text-white text-[18px] font-bold cursor-pointer flex">Hannes&nbsp;
                         <span className="sm:block hidden">| Student</span>
                     </p>
-                </Link>
+                </button>
                 <ul className="list-none hidden sm:flex flex-row gap-10">
                     {navLinks.map((link) => (
                         <li
@@ -37,10 +36,10 @@ export const Navbar = ({ active, setIsOpen }) => {
                 </ul>
                 <div className="sm:hidden flex flex-1 justify-end items-center">
                     <img
-                        src={/*toggle ? close :*/ menu}
+                        src={isOpen ? close : menu}
                         alt="menu"
                         className="w-[28px] h-[28px] object-contain cursor-pointer"
-                        onClick={() => setIsOpen(true)}
+                        onClick={() => setIsOpen(!isOpen)}
                     />
                 </div>
             </div>

@@ -109,3 +109,7 @@ export const technologies = [
         link: 'https://getbootstrap.com/'
     }
 ]
+
+export const projects = [
+
+];

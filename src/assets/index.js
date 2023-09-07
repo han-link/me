@@ -3,6 +3,7 @@ import close from './close.svg'
 import person from './file-person.svg'
 import project from './kanban.svg'
 import contact from './envelope.svg'
+import github from './github-mark.svg'
 
 import web from './web.png'
 import backend from './backend.png'
@@ -39,5 +40,6 @@ export {
     angular,
     bootstrap,
     project,
-    contact
+    contact,
+    github
 }
