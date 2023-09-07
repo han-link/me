@@ -13,93 +13,93 @@ import {
     python,
     angular,
     bootstrap
-} from "./assets";
+} from './assets'
 
 export const navLinks = [
     {
-        id: "about",
-        title: "About",
+        id: 'about',
+        title: 'About'
     },
     {
-        id: "work",
-        title: "Projects",
+        id: 'work',
+        title: 'Projects'
     },
     {
-        id: "contact",
-        title: "Contact",
-    },
-];
+        id: 'contact',
+        title: 'Contact'
+    }
+]
 
 export const services = [
     {
-        title: "Web Developer",
-        icon: web,
+        title: 'Web Developer',
+        icon: web
     },
     {
-        title: "Backend Developer",
-        icon: backend,
+        title: 'Backend Developer',
+        icon: backend
     }
-];
+]
 
 export const technologies = [
     {
-        name: "HTML 5",
+        name: 'HTML 5',
         icon: html,
-        link: ""
+        link: ''
     },
     {
-        name: "CSS 3",
+        name: 'CSS 3',
         icon: css,
-        link: ""
+        link: ''
     },
     {
-        name: "JavaScript",
+        name: 'JavaScript',
         icon: javascript,
-        link: ""
+        link: ''
     },
     {
-        name: "TypeScript",
+        name: 'TypeScript',
         icon: typescript,
-        link: "https://www.typescriptlang.org/"
+        link: 'https://www.typescriptlang.org/'
     },
     {
-        name: "Tailwind CSS",
+        name: 'Tailwind CSS',
         icon: tailwind,
-        link: "https://tailwindcss.com/"
+        link: 'https://tailwindcss.com/'
     },
     {
-        name: "Node JS",
+        name: 'Node JS',
         icon: nodejs,
-        link: "https://nodejs.org/en"
+        link: 'https://nodejs.org/en'
     },
     {
-        name: "MariaDb",
+        name: 'MariaDb',
         icon: mariaDb,
-        link: "https://mariadb.org/"
+        link: 'https://mariadb.org/'
     },
     {
-        name: "git",
+        name: 'git',
         icon: git,
-        link: "https://git-scm.com/"
+        link: 'https://git-scm.com/'
     },
     {
-        name: "docker",
+        name: 'docker',
         icon: docker,
-        link: "https://www.docker.com/"
+        link: 'https://www.docker.com/'
     },
     {
-        name: "Python",
+        name: 'Python',
         icon: python,
-        link: "https://www.python.org/"
+        link: 'https://www.python.org/'
     },
     {
-        name: "Angular",
+        name: 'Angular',
         icon: angular,
-        link: "https://angular.io/"
+        link: 'https://angular.io/'
     },
     {
-        name: "Bootstrap 5",
+        name: 'Bootstrap 5',
         icon: bootstrap,
-        link: "https://getbootstrap.com/"
+        link: 'https://getbootstrap.com/'
     }
-];
+]
