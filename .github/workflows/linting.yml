@@ -1,7 +1,7 @@
 name: Execute Linting
 on:
   push:
-    branches: [ "develop", "main" ] 
+    branches: [ "dev", "main" ] 
 
 jobs:
   test:
