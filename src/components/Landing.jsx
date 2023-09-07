@@ -13,7 +13,7 @@ export const Landing = () => {
                         Hi, I&apos;m  <span className="text-signature">Hannes</span>
                     </h1>
                     <p className="text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-2">
-                        I am currently studying<br/> and develop web applications.
+                        I am currently studying and<br /> developing web applications.
                     </p>
                 </div>
             </div>
