@@ -12,21 +12,27 @@ import {
     mariaDb,
     python,
     angular,
-    bootstrap
+    bootstrap,
+    person,
+    project,
+    contact
 } from './assets'
 
 export const navLinks = [
     {
         id: 'about',
-        title: 'About'
+        title: 'About',
+        icon: person
     },
     {
         id: 'work',
-        title: 'Projects'
+        title: 'Projects',
+        icon: project
     },
     {
         id: 'contact',
-        title: 'Contact'
+        title: 'Contact',
+        icon: contact
     }
 ]
 
