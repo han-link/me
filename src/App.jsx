@@ -1,6 +1,5 @@
 import {BrowserRouter} from "react-router-dom";
 
-/*import {Navbar, Landing, About, Tech} from "./components";*/
 import {Sidenav, Navbar} from "./components/index.js";
 import {MainContent} from "./MainContent.jsx";
 import {useState} from "react";

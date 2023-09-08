@@ -1,5 +1,5 @@
 import React from 'react';
-import {Navbar, Landing, About, Tech, Projects} from './components';
+import {Landing, About, Tech, Projects, Contact} from './components';
 
 export const MainContent = ({isOpen}) => {
     return (
@@ -11,6 +11,7 @@ export const MainContent = ({isOpen}) => {
             <About/>
             <Tech/>
             <Projects/>
+            <Contact />
         </div>
     );
 };

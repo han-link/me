@@ -4,6 +4,7 @@ import About from './About'
 import Tech from './Tech'
 import { Sidenav } from "./Sidenav.jsx";
 import Projects from "./Projects.jsx";
+import Contact from "./Contact.jsx";
 
 export {
     Navbar,
@@ -11,5 +12,6 @@ export {
     About,
     Tech,
     Sidenav,
-    Projects
+    Projects,
+    Contact
 }
