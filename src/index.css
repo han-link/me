@@ -11,8 +11,14 @@
     color-scheme: dark;
 }
 
-div#root {
-    background-color: #11042a;
+div#root{
+    background: rgb(22,25,37);
+    background: linear-gradient(180deg, rgba(22,25,37,1) 0%, rgb(15, 3, 44) 38%, rgb(36, 10, 58) 71%);
+}
+
+.card-gradient {
+    background: rgb(22,25,37);
+    background: linear-gradient(0deg, rgba(13, 8, 26, 0.9) 0%, rgb(7, 4, 14, 0.9) 38%, rgb(13, 8, 26, 0.9) 100%);
 }
 
 .hash-span {
@@ -22,7 +28,7 @@ div#root {
 }
 
 .blue-yellow-gradient {
-    background: "#00a6ff";
+    background: #00a6ff;
     background: linear-gradient(90.13deg, #00a6ff 1.9%, #FFED00 97.5%);
     background: -webkit-linear-gradient(-90.13deg, #00a6ff 1.9%, #FFED00 97.5%);
 }

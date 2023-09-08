@@ -1,4 +1,4 @@
-const signature = "#2c6aef";
+const signature = "#7A28CB";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -7,8 +7,8 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                primary: "#00072d",
-                secondary: "#001c55",
+                primary: "rgba(1,4,6,0.94)",
+                secondary: "#292838",
                 tertiary: "#ffffff",
                 signature: signature,
                 "black-100": "#100c2c",
@@ -25,6 +25,9 @@ module.exports = {
                 "landing-page": "url('/public/landing-page.webp')",
                 "signal-gradient": `-webkit-linear-gradient(90deg,${signature+"00"} 0%,${signature} 100%);`,
             },
+            animation: {
+                "ping-slow": "ping 2.5s ease-out infinite"
+            }
         },
     },
     plugins: [],
