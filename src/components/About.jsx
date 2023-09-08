@@ -11,7 +11,7 @@ const ServiceCard = ({index, title, icon}) => {
         <Tilt className='xs:w-[250px] w-full'>
             <motion.div
                 variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-                className='w-full blue-yellow-gradient p-[1px] rounded-[5px] shadow-card'
+                className='w-full border-black-200 p-[1px] rounded-[5px] shadow-card'
             >
                 <div
                     options={{
@@ -19,7 +19,7 @@ const ServiceCard = ({index, title, icon}) => {
                         scale: 1,
                         speed: 450,
                     }}
-                    className='bg-secondary rounded-[5px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+                    className='card-gradient rounded-[5px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
                 >
                     <img
                         src={icon}
@@ -41,7 +41,7 @@ const About = () => {
         <>
             <motion.div variants={textVariant()}>
                 <p className="sm:text-[18px] text-[14px] text-tertiary uppercase tracking-wider">Introduction</p>
-                <h2 className="sm:text-[18px] text-[14px] text-tertiary uppercase tracking-wider">Overview.</h2>
+                <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">Overview.</h2>
             </motion.div>
 
             <motion.p
