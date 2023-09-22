@@ -15,8 +15,13 @@ import {
     bootstrap,
     person,
     project,
-    contact
+    contact,
+    us,
+    de
 } from './assets'
+
+import translationEN from "./locales/us/translation.json";
+import translationDE from"./locales/de/translation.json";
 
 export const navLinks = [
     {
@@ -113,3 +118,29 @@ export const technologies = [
 export const projects = [
 
 ];
+
+export const languages = [
+    {
+        code: "us",
+        flag: us,
+        label: "Englisch"
+    },
+    {
+        code: "de",
+        flag: de,
+        label: "Deutsch"
+    }
+]
+
+export const language_resources ={
+    us: {
+        translation: {
+            "landing_greeting": "Hi, I\u0027m",
+            "landing_greeting_name": "Hannes",
+            "landing_greeting_text": "I am currently studying and<br>  developing web applications."
+        },
+    },
+    de: {
+        translation: translationDE,
+    },
+};

@@ -21,6 +21,9 @@ import python from './tech/python.svg'
 import angular from './tech/angular.svg'
 import bootstrap from './tech/bootstrap.svg'
 
+import us from "./lang/us.svg"
+import de from "./lang/de.svg"
+
 export {
     menu,
     close,
@@ -41,5 +44,7 @@ export {
     bootstrap,
     project,
     contact,
-    github
+    github,
+    us,
+    de
 }

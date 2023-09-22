@@ -1,6 +1,7 @@
 import React from 'react';
 import {menu, close} from '../assets';
 import {navLinks} from '../constants';
+import { LanguageSwitcher } from './index';
 
 export const Navbar = ({ active, setActive, setIsOpen, isOpen }) => {
     return (
@@ -34,6 +35,7 @@ export const Navbar = ({ active, setActive, setIsOpen, isOpen }) => {
                         </li>
                     ))}
                 </ul>
+                <LanguageSwitcher />
                 <div className="sm:hidden flex flex-1 justify-end items-center">
                     <img
                         src={isOpen ? close : menu}

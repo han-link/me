@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import {useTranslation} from "react-i18next";
 
 export const Landing = () => {
+    const { t } = useTranslation();
     return (
         <section className="relative w-full h-screen mx-auto">
             <div className="sm:px-16 px-6 absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5">
@@ -10,14 +12,11 @@ export const Landing = () => {
                 </div>
                 <div className="z-10">
                     <h1 className="font-black lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2 text-white">
-                        Hi, I&apos;m  <span className="text-signature">Hannes</span>
+                        {t("landing_greeting")}  <span className="text-signature">{t("landing_greeting_name")}</span>
                     </h1>
-                    <p className="text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-2">
-                        I am currently studying and<br /> developing web applications.
-                    </p>
+                    <p className="max-w-xl text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-2">{t('landing_greeting_text')}</p>
                 </div>
             </div>
-            {/*<ComputersCanvas />*/}
             <div className='absolute xs:bottom-10 bottom-16 w-full flex justify-center items-center'>
                 <a href='#about'>
                     <div className='w-[35px] h-[64px] rounded-3xl border-4 border-tertiary flex justify-center items-start p-2'>
