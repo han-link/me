@@ -1,6 +1,6 @@
 import React from 'react';
 import {navLinks} from '../constants';
-import {close} from '../assets';
+import { LanguageSwitcher } from './index';
 
 export const Sidenav = ({active, setActive, isOpen, setIsOpen}) => {
     return (
@@ -10,6 +10,9 @@ export const Sidenav = ({active, setActive, isOpen, setIsOpen}) => {
             }`}
         >
             <ul className="list-none flex flex-col w-4/5 mt-5">
+                <div className="mx-auto">
+                    <LanguageSwitcher />
+                </div>
                 {navLinks.map((link) => (
                     <div key={link.id + 1}  className="box-border">
                         <a

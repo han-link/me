@@ -4,6 +4,7 @@ import person from './file-person.svg'
 import project from './kanban.svg'
 import contact from './envelope.svg'
 import github from './github-mark.svg'
+import chevronDown from './chevron-down.svg'
 
 import web from './web.png'
 import backend from './backend.png'
@@ -21,8 +22,8 @@ import python from './tech/python.svg'
 import angular from './tech/angular.svg'
 import bootstrap from './tech/bootstrap.svg'
 
-import us from "./lang/us.svg"
-import de from "./lang/de.svg"
+import us from './lang/us.svg'
+import de from './lang/de.svg'
 
 export {
     menu,
@@ -46,5 +47,6 @@ export {
     contact,
     github,
     us,
-    de
+    de,
+    chevronDown
 }
