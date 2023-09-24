@@ -3,13 +3,13 @@
     "greeting": {
       "intro": "Hi, Ich bin",
       "name": "Hannes",
-      "text": "Ich studiere gerade und entwickle nebenher web apps."
+      "text": "Ich studiere gerade und entwickle nebenher Webanwendungen."
     }
   },
   "about": {
     "caption": "Einleitung",
     "title": "Über mich.",
-    "text": "Ich bin ein angehender Entwickler mit Erfahrung in TypeScript, JavaScript und Python sowie Fachwissen in Frameworks wie Angular und Node.js."
+    "text": "Ich bin ein angehender Entwickler mit Erfahrung in TypeScript, JavaScript und Python sowie Fachwissen in Frameworks wie Node.js und Angular."
   },
   "projects": {
     "caption": "Meine Arbeiten",
