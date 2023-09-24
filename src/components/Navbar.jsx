@@ -10,11 +10,12 @@ export const Navbar = ({active, setActive, setIsOpen, isOpen}) => {
     return (
         <nav className="fixed top-0 sm:px-16 px-6 w-full flex items-center py-5 z-20 bg-primary">
             <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-                <button className='flex items-center gap-2'
+                <button className='flex items-center gap-2 rounded-md px-3 py-2 hover:bg-white hover:bg-opacity-10'
                         onClick={() => {
                             setActive("");
                             setIsOpen(false);
                             window.scrollTo(0, 0);
+                            history.replaceState(null, null, ' '); // This will remove the fragment identifier
                         }}>
                     <p className="text-white text-[18px] font-bold cursor-pointer flex">Hannes&nbsp;
                         <span className="sm:block hidden">| Student</span>
@@ -22,17 +23,20 @@ export const Navbar = ({active, setActive, setIsOpen, isOpen}) => {
                 </button>
                 <ul className="list-none hidden sm:flex flex-row gap-10">
                     {navLinks.map((link) => (
-                        <li
-                            key={link.id}
-                            className={`${
-                                active === link.title[i18n.language]
-                                    ? "text-white"
-                                    : "text-tertiary"
-                            } hover:text-white text-[18px]
-                            font-medium cursor-pointer`}
-                            onClick={() => setActive(link.title[i18n.language])}
-                        >
-                            <a href={`#${link.id}`}>{link.title[i18n.language]}</a>                        </li>
+                        <a href={`#${link.id}`}>
+                            <li
+                                key={link.id}
+                                className={`${
+                                    active === link.title[i18n.language]
+                                        ? "text-white"
+                                        : "text-tertiary"
+                                } hover:text-white text-[18px]
+                            font-medium cursor-pointer rounded-md px-3 py-2 hover:bg-white hover:bg-opacity-10`}
+                                onClick={() => setActive(link.title[i18n.language])}
+                            >
+                                {link.title[i18n.language]}
+                            </li>
+                        </a>
                     ))}
                 </ul>
                 <div className="hidden sm:flex">
