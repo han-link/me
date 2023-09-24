@@ -26,17 +26,26 @@ import translationDE from './locales/de/translation.json'
 export const navLinks = [
     {
         id: 'about',
-        title: 'About',
+        title: {
+            en: 'About',
+            de: 'Über mich',
+        },
         icon: person
     },
     {
         id: 'work',
-        title: 'Projects',
+        title: {
+            en: 'Projects',
+            de: 'Projekte'
+        },
         icon: project
     },
     {
         id: 'contact',
-        title: 'Contact',
+        title: {
+            en: 'Contact',
+            de: 'Kontakt'
+        },
         icon: contact
     }
 ]
@@ -121,24 +130,20 @@ export const projects = [
 
 export const languages = [
     {
-        code: 'us',
+        code: 'en',
         flag: us,
-        label: 'Englisch'
+        label: 'Englisch (US)'
     },
     {
         code: 'de',
         flag: de,
-        label: 'Deutsch'
+        label: 'Deutsch (DE)'
     }
 ]
 
 export const language_resources = {
-    us: {
-        translation: {
-            landing_greeting: 'Hi, I\u0027m',
-            landing_greeting_name: 'Hannes',
-            landing_greeting_text: 'I am currently studying and<br>  developing web applications.'
-        }
+    en: {
+        translation: translationEN
     },
     de: {
         translation: translationDE

@@ -32,7 +32,7 @@ export const LanguageSwitcher = () => {
         <Menu as="div" className="relative inline-block text-left">
             <div>
                 <Menu.Button
-                    className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm bg-transparent font-semibold uppercase hover:bg-white hover:bg-opacity-10">
+                    className="inline-flex w-full items-center gap-x-1.5 rounded-md px-3 py-2 text-sm bg-transparent font-semibold uppercase hover:bg-white hover:bg-opacity-10">
                     <img src={getFlagIconForLanguage(i18n.language)} alt="Flag" className="w-4 h-4 mr-2"/>
                     {getCountryCodeForLanguage(i18n.language)}
                     <ChevronDownIcon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true"/>
@@ -51,7 +51,7 @@ export const LanguageSwitcher = () => {
                 <Menu.Items
                     className="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-primary shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                     <div className="py-1">
-                        {languages.map(({code, flag, label}) => (
+                        {languages.map(({code, label}) => (
                             <Menu.Item key={code} className="text-white hover:text-gray-500 hover">
                                 <div className="px-6 py-3 text-lg cursor-pointer flex items-center w-fit">
                                     <option value={code} onClick={handleLanguageChange}>

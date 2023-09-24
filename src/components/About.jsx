@@ -5,6 +5,7 @@ import {motion} from 'framer-motion';
 import {services} from "../constants";
 import {fadeIn, textVariant} from "../utils/motion.js";
 import {SectionWrapper} from "../helper";
+import {useTranslation} from "react-i18next";
 
 const ServiceCard = ({index, title, icon}) => {
     return (
@@ -37,19 +38,19 @@ const ServiceCard = ({index, title, icon}) => {
 }
 
 const About = () => {
+    const { t } = useTranslation();
     return (
         <>
             <motion.div variants={textVariant()}>
-                <p className="sm:text-[18px] text-[14px] text-tertiary uppercase tracking-wider">Introduction</p>
-                <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">Overview.</h2>
+                <p className="sm:text-[18px] text-[14px] text-tertiary uppercase tracking-wider">{t('about.caption')}</p>
+                <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">{t('about.title')}</h2>
             </motion.div>
 
             <motion.p
                 variants={fadeIn("", "", 0.1, 1)}
                 className='mt-4 text-tertiary text-[17px] max-w-3xl leading-[30px]'
             >
-                I'm a developer with experience in TypeScript,
-                JavaScript and Python, and expertise in frameworks like Angular and Node.js.
+                {t('about.text')}
             </motion.p>
 
             <div className='mt-20 flex flex-wrap gap-10 justify-center'>

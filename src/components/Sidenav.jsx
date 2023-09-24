@@ -1,8 +1,11 @@
 import React from 'react';
 import {navLinks} from '../constants';
 import { LanguageSwitcher } from './index';
+import {useTranslation} from "react-i18next";
 
 export const Sidenav = ({active, setActive, isOpen, setIsOpen}) => {
+    const {i18n} = useTranslation();
+
     return (
         <div
             className={`fixed top-[68px] right-0 flex flex-col items-end h-full w-64 bg-primary transform transition-transform duration-300 ease-in-out ${
@@ -20,20 +23,20 @@ export const Sidenav = ({active, setActive, isOpen, setIsOpen}) => {
                             key={link.id}
                             className="block"
                             onClick={() => {
-                                setActive(link.title);
+                                setActive(link.title[i18n.language]);
                                 setIsOpen(!isOpen);
                             }}
                         >
                             <li
                                 className={`${
-                                    active === link.title
+                                    active === link.title[i18n.language]
                                         ? "text-signature"
                                         : "text-white"
                                 } font-poppins font-medium 
             cursor-pointer text-[16px] z-40 flex items-center my-8`}
                             >
-                                <img src={link.icon} alt={link.title} className="w-[28px] h-[28px] mr-3"/>
-                                {link.title}
+                                <img src={link.icon} alt={link.title[i18n.language]} className="w-[28px] h-[28px] mr-3"/>
+                                {link.title[i18n.language]}
                             </li>
                         </a>
 

@@ -5,6 +5,7 @@ import {github} from "../assets";
 import {SectionWrapper} from "../helper";
 import {projects} from "../constants";
 import {fadeIn, textVariant} from "../utils/motion";
+import {useTranslation} from "react-i18next";
 
 const ProjectCard = ({
                          index,
@@ -72,11 +73,12 @@ const ProjectCard = ({
 };
 
 const Projects = () => {
+    const { t } = useTranslation();
     return (
         <>
             <motion.div variants={textVariant()}>
-                <p className="sm:text-[18px] text-[14px] text-tertiary uppercase tracking-wider">My work</p>
-                <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">Projects.</h2>
+                <p className="sm:text-[18px] text-[14px] text-tertiary uppercase tracking-wider">{t('projects.caption')}</p>
+                <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">{t('projects.title')}</h2>
             </motion.div>
 
             <div className='w-full flex'>
@@ -84,7 +86,7 @@ const Projects = () => {
                     variants={fadeIn("", "", 0.1, 1)}
                     className='mt-3 text-tertiary text-[17px] max-w-3xl leading-[30px]'
                 >
-                    Coming soon.
+                    {t('projects.text')}
                 </motion.p>
             </div>
 

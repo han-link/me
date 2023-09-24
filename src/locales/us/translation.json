@@ -1,5 +1,41 @@
 {
-  "landing_greeting": "Hi, I\u0027m",
-  "landing_greeting_name": "Hannes",
-  "landing_greeting_text": "I am currently studying and<br>  developing web applications."
+  "landing": {
+    "greeting": {
+      "intro": "Hi, I\u0027m",
+      "name": "Hannes",
+      "text": "I am currently studying and developing web applications."
+    }
+  },
+  "about": {
+    "caption": "Introduction",
+    "title": "Overview.",
+    "text": "I am a budding developer with experience in TypeScript, JavaScript, and Python, as well as expertise in frameworks like Angular and Node.js."
+  },
+  "projects": {
+    "caption": "My work",
+    "title": "Projects.",
+    "text": "Coming soon..."
+  },
+  "contact": {
+    "caption" : "Get in touch",
+    "title": "Contact.",
+    "form": {
+      "name": {
+        "text": "Your Name",
+        "placeholder": "What's your name?"
+      },
+      "email": {
+        "text": "Your Email",
+        "placeholder": "What's your web address?"
+      },
+      "message": {
+        "text": "Your Message",
+        "placeholder": "What you want to say?"
+      },
+      "submit": {
+        "text-waiting": "Sending...",
+        "text-send": "Send"
+      }
+    }
+  }
 }

@@ -1,5 +1,41 @@
 {
-  "landing_greeting": "Hi, Ich bin",
-  "landing_greeting_name": "Hannes",
-  "landing_greeting_text": "Ich studiere gerade und<br>  entwickle nebenher web apps."
+  "landing": {
+    "greeting": {
+      "intro": "Hi, Ich bin",
+      "name": "Hannes",
+      "text": "Ich studiere gerade und entwickle nebenher web apps."
+    }
+  },
+  "about": {
+    "caption": "Einleitung",
+    "title": "Über mich.",
+    "text": "Ich bin ein angehender Entwickler mit Erfahrung in TypeScript, JavaScript und Python sowie Fachwissen in Frameworks wie Angular und Node.js."
+  },
+  "projects": {
+    "caption": "Meine Arbeiten",
+    "title": "Projekte.",
+    "text": "Kommen bald..."
+  },
+  "contact": {
+    "caption" : "Schreibe mir",
+    "title": "Kontakt.",
+    "form": {
+      "name": {
+        "text": "Dein Name",
+        "placeholder": "Wie soll ich dich nennen?"
+      },
+      "email": {
+        "text": "Deine Email",
+        "placeholder": "Wie lautet deine Web Addresse?"
+      },
+      "message": {
+        "text": "Deine Nachricht",
+        "placeholder": "Was möchtest du mir sagen?"
+      },
+      "submit": {
+        "text-waiting": "Senden...",
+        "text-send": "Senden"
+      }
+    }
+  }
 }
