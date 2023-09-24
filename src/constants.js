@@ -17,7 +17,8 @@ import {
     project,
     contact,
     us,
-    de
+    de,
+    projectsScheduler
 } from './assets'
 
 import translationEN from './locales/us/translation.json'
@@ -28,7 +29,7 @@ export const navLinks = [
         id: 'about',
         title: {
             en: 'About',
-            de: 'Über mich',
+            de: 'Über mich'
         },
         icon: person
     },
@@ -125,7 +126,32 @@ export const technologies = [
 ]
 
 export const projects = [
-
+    {
+        name: {
+            en: 'Appointment Scheduler',
+            de: 'Terminplaner'
+        },
+        description: {
+            en: "The C-program manages and stores appointment lists. Features include viewing daily and specific day appointments, adding, searching, and deleting individual or all appointments, and exiting. Appointments are saved to a file, and on program startup, past entries are removed, displaying only the current day's schedule.",
+            de: 'Das C-Programm verwaltet und speichert Terminlisten. Zu den Funktionen gehören die Anzeige von täglichen und tagesbezogenen Terminen, das Hinzufügen, Suchen und Löschen einzelner oder aller Termine sowie das Beenden. Die Termine werden in einer Datei gespeichert, und beim Programmstart werden frühere Einträge entfernt, so dass nur der aktuelle Tagesplan angezeigt wird.'
+        },
+        tags: [
+            {
+                name: 'C',
+                color: 'blue-text-gradient'
+            },
+            {
+                name: 'linked-list',
+                color: 'green-text-gradient'
+            },
+            {
+                name: 'console-application',
+                color: 'pink-text-gradient'
+            }
+        ],
+        image: projectsScheduler,
+        source_code_link: 'https://github.com/han-link/C_Terminplaner'
+    }
 ]
 
 export const languages = [
@@ -141,7 +167,7 @@ export const languages = [
     }
 ]
 
-export const language_resources = {
+export const languageResources = {
     en: {
         translation: translationEN
     },

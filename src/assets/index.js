@@ -22,6 +22,8 @@ import python from './tech/python.svg'
 import angular from './tech/angular.svg'
 import bootstrap from './tech/bootstrap.svg'
 
+import projectsScheduler from './projects/c_scheduler.png'
+
 import us from './lang/us.svg'
 import de from './lang/de.svg'
 
@@ -48,5 +50,6 @@ export {
     github,
     us,
     de,
-    chevronDown
+    chevronDown,
+    projectsScheduler
 }
