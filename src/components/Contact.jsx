@@ -86,7 +86,7 @@ const Contact = () => {
                         onChange={handleChange}
                         placeholder={t('contact.form.name.placeholder')}
                         className='bg-secondary py-4 px-6 placeholder:text-gray-400 text-tertiary rounded-[5px] outline-none border-none font-medium'
-                    />
+                        required />
                 </label>
                 <label className='flex flex-col'>
                     <span className='text-white font-medium mb-4'>{t('contact.form.email.text')}</span>
@@ -97,7 +97,7 @@ const Contact = () => {
                         onChange={handleChange}
                         placeholder={t('contact.form.email.placeholder')}
                         className='bg-secondary py-4 px-6 placeholder:text-gray-400 text-white rounded-[5px] outline-none border-none font-medium'
-                    />
+                        required />
                 </label>
                 <label className='flex flex-col'>
                     <span className='text-white font-medium mb-4'>{t('contact.form.message.text')}</span>
@@ -108,7 +108,7 @@ const Contact = () => {
                         onChange={handleChange}
                         placeholder={t('contact.form.email.placeholder')}
                         className='bg-secondary py-4 px-6 placeholder:text-gray-400 text-white rounded-[5px] outline-none border-none font-medium'
-                    />
+                        required />
                 </label>
 
                 <button
