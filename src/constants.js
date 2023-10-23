@@ -51,6 +51,41 @@ export const navLinks = [
     }
 ]
 
+export const footerLinks = [
+    {
+        id: 'about',
+        title: {
+            en: 'About',
+            de: 'Über mich'
+        },
+        link: '/#about'
+    },
+    {
+        id: 'imprint',
+        title: {
+            en: 'Imprint',
+            de: 'Impressum'
+        },
+        link: '/imprint'
+    },
+    {
+        id: 'privacy-policy',
+        title: {
+            en: 'Privacy Policy',
+            de: 'Datenschutzerklärung'
+        },
+        link: 'privacypolicy'
+    },
+    {
+        id: 'contact',
+        title: {
+            en: 'Contact',
+            de: 'Kontakt'
+        },
+        link: '/#contact'
+    }
+]
+
 export const services = [
     {
         title: 'Web Developer',

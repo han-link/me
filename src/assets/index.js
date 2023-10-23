@@ -27,6 +27,8 @@ import projectsScheduler from './projects/c_scheduler.png'
 import us from './lang/us.svg'
 import de from './lang/de.svg'
 
+import logo from '../../public/favicon.webp'
+
 export {
     menu,
     close,
@@ -51,5 +53,6 @@ export {
     us,
     de,
     chevronDown,
-    projectsScheduler
+    projectsScheduler,
+    logo
 }

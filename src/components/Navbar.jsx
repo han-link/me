@@ -6,7 +6,6 @@ import {useTranslation} from "react-i18next";
 
 export const Navbar = ({active, setActive, setIsOpen, isOpen}) => {
     const {i18n} = useTranslation();
-    const lang = i18n.language;
     return (
         <nav className="fixed top-0 sm:px-16 px-6 w-full flex items-center py-5 z-20 bg-primary">
             <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
@@ -18,12 +17,12 @@ export const Navbar = ({active, setActive, setIsOpen, isOpen}) => {
                             history.replaceState(null, null, ' '); // This will remove the fragment identifier
                         }}>
                     <p className="text-white text-[18px] font-bold cursor-pointer flex">Hannes&nbsp;
-                        <span className="sm:block hidden">| Student</span>
+                        <span className="md:block hidden">| Student</span>
                     </p>
                 </button>
-                <ul className="list-none hidden sm:flex flex-row gap-10">
+                <ul className="list-none hidden md:flex flex-row gap-10">
                     {navLinks.map((link) => (
-                        <a href={`#${link.id}`}>
+                        <a href={`#${link.id}`} key={link.id}>
                             <li
                                 key={link.id}
                                 className={`${
@@ -39,10 +38,10 @@ export const Navbar = ({active, setActive, setIsOpen, isOpen}) => {
                         </a>
                     ))}
                 </ul>
-                <div className="hidden sm:flex">
+                <div className="hidden md:flex">
                     <LanguageSwitcher/>
                 </div>
-                <div className="sm:hidden flex flex-1 justify-end items-center">
+                <div className="md:hidden flex flex-1 justify-end items-center">
                     <img
                         src={isOpen ? close : menu}
                         alt="menu"
