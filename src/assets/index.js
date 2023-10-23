@@ -4,6 +4,7 @@ import person from './file-person.svg'
 import project from './kanban.svg'
 import contact from './envelope.svg'
 import github from './github-mark.svg'
+import chevronDown from './chevron-down.svg'
 
 import web from './web.png'
 import backend from './backend.png'
@@ -20,6 +21,13 @@ import mariaDb from './tech/mariadb.svg'
 import python from './tech/python.svg'
 import angular from './tech/angular.svg'
 import bootstrap from './tech/bootstrap.svg'
+
+import projectsScheduler from './projects/c_scheduler.png'
+
+import us from './lang/us.svg'
+import de from './lang/de.svg'
+
+import logo from '../../public/favicon.webp'
 
 export {
     menu,
@@ -41,5 +49,10 @@ export {
     bootstrap,
     project,
     contact,
-    github
+    github,
+    us,
+    de,
+    chevronDown,
+    projectsScheduler,
+    logo
 }

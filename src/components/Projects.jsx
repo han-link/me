@@ -5,11 +5,13 @@ import {github} from "../assets";
 import {SectionWrapper} from "../helper";
 import {projects} from "../constants";
 import {fadeIn, textVariant} from "../utils/motion";
+import {useTranslation} from "react-i18next";
+import i18n from "i18next";
 
 const ProjectCard = ({
                          index,
                          name,
-                         description,
+                         description, //{link.title[i18n.language]}
                          tags,
                          image,
                          source_code_link,
@@ -22,7 +24,7 @@ const ProjectCard = ({
                     scale: 1,
                     speed: 450,
                 }}
-                className='bg-secondary p-5 rounded-[5px] sm:w-[360px] w-full cursor-pointer'
+                className='bg-secondary p-5 rounded-[5px] sm:w-[360px] w-full cursor-pointer min-h-[560px]'
             >
                 <a href={source_code_link} target="_blank">
                     <div className='relative w-full h-[230px] flex justify-center items-center'>
@@ -49,10 +51,9 @@ const ProjectCard = ({
                             </div>
                         </div>
                     </div>
-
                     <div className='mt-5'>
-                        <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-                        <p className='mt-2 text-tertiary text-[14px]'>{description}</p>
+                        <h3 className='text-white font-bold text-[24px]'>{name[i18n.language]}</h3>
+                        <p className='mt-2 text-tertiary text-[14px]'>{description[i18n.language]}</p>
                     </div>
 
                     <div className='mt-4 flex flex-wrap gap-2'>
@@ -72,11 +73,12 @@ const ProjectCard = ({
 };
 
 const Projects = () => {
+    const {t} = useTranslation();
     return (
         <>
             <motion.div variants={textVariant()}>
-                <p className="sm:text-[18px] text-[14px] text-tertiary uppercase tracking-wider">My work</p>
-                <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">Projects.</h2>
+                <p className="sm:text-[18px] text-[14px] text-tertiary uppercase tracking-wider">{t('projects.caption')}</p>
+                <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">{t('projects.title')}</h2>
             </motion.div>
 
             <div className='w-full flex'>
@@ -84,7 +86,7 @@ const Projects = () => {
                     variants={fadeIn("", "", 0.1, 1)}
                     className='mt-3 text-tertiary text-[17px] max-w-3xl leading-[30px]'
                 >
-                    Coming soon.
+                    {t('projects.text')}
                 </motion.p>
             </div>
 

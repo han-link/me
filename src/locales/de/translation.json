@@ -1,0 +1,41 @@
+{
+  "landing": {
+    "greeting": {
+      "intro": "Hi, Ich bin",
+      "name": "Hannes",
+      "text": "Ich studiere gerade und entwickle nebenher Webanwendungen."
+    }
+  },
+  "about": {
+    "caption": "Einleitung",
+    "title": "Über mich.",
+    "text": "Ich bin ein angehender Entwickler mit Erfahrung in TypeScript, JavaScript und Python sowie Fachwissen in Frameworks wie Node.js und Angular."
+  },
+  "projects": {
+    "caption": "Meine Arbeiten",
+    "title": "Projekte.",
+    "text": "Im Folgenden finden Sie Projekte, die mein Fachwissen zeigen. Jedes Projekt enthält eine Beschreibung, Code-Links und Live-Demos, die meine Fähigkeiten zur Problemlösung, mein technisches Know-how und meine Fähigkeiten im Projektmanagement hervorheben."
+  },
+  "contact": {
+    "caption" : "Schreibe mir",
+    "title": "Kontakt.",
+    "form": {
+      "name": {
+        "text": "Dein Name",
+        "placeholder": "Wie soll ich dich nennen?"
+      },
+      "email": {
+        "text": "Deine Email",
+        "placeholder": "Wie lautet deine Web Addresse?"
+      },
+      "message": {
+        "text": "Deine Nachricht",
+        "placeholder": "Was möchtest du mir sagen?"
+      },
+      "submit": {
+        "text-waiting": "Senden...",
+        "text-send": "Senden"
+      }
+    }
+  }
+}
