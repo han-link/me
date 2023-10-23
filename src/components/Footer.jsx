@@ -28,7 +28,7 @@ export const Footer = () => {
                 </div>
                 <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"/>
                 <span className="block text-sm text-gray-500 text-center dark:text-gray-400">© 2023 <a
-                    href="https://flowbite.com/" className="hover:underline">hannes-link.de</a>. All Rights Reserved.</span>
+                    href="https://www.hannes-link.de/" className="hover:underline">hannes-link.de</a>. All Rights Reserved.</span>
             </div>
         </footer>
     )
