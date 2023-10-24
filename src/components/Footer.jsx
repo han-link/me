@@ -16,10 +16,10 @@ export const Footer = () => {
                             Hannes Link
                         </span>
                     </a>
-                    <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                    <ul className="flex flex-wrap justify-center items-center text-sm font-medium text-gray-500 dark:text-gray-400">
                         {footerLinks.map((link) => (
-                            <li key={link.id}>
-                                <a href={link.link} className="mr-4 hover:underline md:mr-6" key={link.id}>
+                            <li key={link.id} className="mb-2.5">
+                                <a href={link.link} className="mx-2 hover:underline md:mx-3" key={link.id}>
                                     {link.title[i18n.language]}
                                 </a>
                             </li>
