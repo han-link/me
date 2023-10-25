@@ -22,7 +22,7 @@ module.exports = {
                 xs: "450px",
             },
             backgroundImage: {
-                "landing-page": "url('/public/landing-page.webp')",
+                "landing-page": "url('/public/landing-page_compressed.webp')",
                 "signal-gradient": `-webkit-linear-gradient(90deg,${signature+"00"} 0%,${signature} 100%);`,
             },
             animation: {
