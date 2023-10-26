@@ -22,6 +22,7 @@ import de from './lang/de.svg'
 import user from './user.svg'
 import rocket from './rocket.svg'
 import envelope from './envelope.svg'
+import github from './github-mark-white.svg'
 
 export {
     web,
@@ -43,5 +44,6 @@ export {
     projectsScheduler,
     user,
     rocket,
-    envelope
+    envelope,
+    github
 }

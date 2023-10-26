@@ -3,6 +3,7 @@ import {motion} from "framer-motion";
 
 import {SectionWrapper} from "../helper";
 import {projects} from "../constants";
+import {github} from "../assets"
 import {fadeIn, textVariant} from "../utils/motion";
 import {useTranslation} from "react-i18next";
 import i18n from "i18next";
@@ -27,7 +28,8 @@ const ProjectCard = ({
             >
                 <a href={source_code_link} target="_blank">
                     <div className='relative w-full h-[230px] flex justify-center items-center'>
-                        <i className={`bi bi-github text-8xl ${image ? 'hidden' : 'block'} `}/>
+                        <img src={github} alt="decorative" className={`w-1/2 h-1/2 object-contain ${image ? 'hidden' : 'block'}`}/>
+
                         <img
                             src={image}
                             alt='project image'
@@ -38,16 +40,11 @@ const ProjectCard = ({
                             <div
                                 className='black-gradient w-10 h-10 rounded-full flex justify-center items-center'
                             >
-                                <i className={`bi bi-github w-1/2 h-1/2 object-contain ${image ? 'block' : 'hidden'}`}/>
+                                <img src={github} alt="decorative" className={`w-1/2 h-1/2 object-contain ${image ? 'block' : 'hidden'}`}/>
                             </div>
                         </div>
                     </div>
-                    <div className='mt-5'>
-                        <h3 className='text-white font-bold text-[24px]'>{name[i18n.language]}</h3>
-                        <p className='mt-2 text-tertiary text-[14px]'>{description[i18n.language]}</p>
-                    </div>
-
-                    <div className='mt-4 flex flex-wrap gap-2'>
+                    <div className='mt-2 flex flex-wrap gap-2'>
                         {tags.map((tag) => (
                             <p
                                 key={`${name}-${tag.name}`}
@@ -57,6 +54,11 @@ const ProjectCard = ({
                             </p>
                         ))}
                     </div>
+                    <div className='mt-3'>
+                        <h3 className='text-white font-bold text-[24px]'>{name[i18n.language]}</h3>
+                        <p className='mt-2 text-tertiary text-[14px]'>{description[i18n.language]}</p>
+                    </div>
+                    <p className="text-purple-500 underline mt-4">View more</p>
                 </a>
             </Tilt>
         </motion.div>
