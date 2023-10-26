@@ -11,7 +11,7 @@ export const Landing = () => {
                     <div className="w-1 sm:h-80 h-40 bg-signal-gradient" />
                 </div>
                 <div className="z-10">
-                    <h1 className="font-black lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2 text-white">
+                    <h1 className="font-black lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2 text-red">
                         {t('landing.greeting.intro')}  <span className="text-signature">{t("landing.greeting.name")}</span>
                     </h1>
                     <p className="max-w-xl text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-2">
@@ -20,7 +20,7 @@ export const Landing = () => {
                 </div>
             </div>
             <div className='absolute xs:bottom-10 bottom-16 w-full flex justify-center items-center'>
-                <a href='#about'>
+                <a href='#about' aria-label='Scroll to About section'>
                     <div className='w-[35px] h-[64px] rounded-3xl border-4 border-tertiary flex justify-center items-start p-2'>
                         <motion.div
                             animate={{

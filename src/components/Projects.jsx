@@ -1,7 +1,6 @@
 import {Tilt as Tilt} from 'react-tilt';
 import {motion} from "framer-motion";
 
-import {github} from "../assets";
 import {SectionWrapper} from "../helper";
 import {projects} from "../constants";
 import {fadeIn, textVariant} from "../utils/motion";
@@ -28,11 +27,7 @@ const ProjectCard = ({
             >
                 <a href={source_code_link} target="_blank">
                     <div className='relative w-full h-[230px] flex justify-center items-center'>
-                        <img
-                            src={github}
-                            alt="github logo as default project image"
-                            className={`${image ? 'hidden' : 'block'} `}
-                        />
+                        <i className={`bi bi-github text-8xl ${image ? 'hidden' : 'block'} `}/>
                         <img
                             src={image}
                             alt='project image'
@@ -43,11 +38,7 @@ const ProjectCard = ({
                             <div
                                 className='black-gradient w-10 h-10 rounded-full flex justify-center items-center'
                             >
-                                <img
-                                    src={github}
-                                    alt='source code'
-                                    className='w-1/2 h-1/2 object-contain'
-                                />
+                                <i className={`bi bi-github w-1/2 h-1/2 object-contain ${image ? 'block' : 'hidden'}`}/>
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import {navLinks} from '../constants';
-import { LanguageSwitcher } from './index';
+import {LanguageSwitcher} from './index';
 import {useTranslation} from "react-i18next";
 
 export const Sidenav = ({active, setActive, isOpen, setIsOpen}) => {
@@ -13,35 +13,35 @@ export const Sidenav = ({active, setActive, isOpen, setIsOpen}) => {
             }`}
         >
             <ul className="list-none flex flex-col w-4/5 mt-5">
-                <div className="mx-auto">
-                    <LanguageSwitcher />
-                </div>
+                <li key="language-selector">
+                    <div className="mx-auto">
+                        <LanguageSwitcher/>
+                    </div>
+                </li>
                 {navLinks.map((link) => (
-                    <div key={link.id + 1}  className="box-border">
+                    <li key={link.id}
+                        className={`${
+                            active === link.title[i18n.language]
+                                ? "text-signature"
+                                : "text-white"
+                        } font-poppins font-medium 
+            cursor-pointer text-[16px]`}
+                    >
                         <a
                             href={`#${link.id}`}
-                            key={link.id}
-                            className="block"
+                            className="flex py-8"
                             onClick={() => {
                                 setActive(link.title[i18n.language]);
                                 setIsOpen(!isOpen);
                             }}
                         >
-                            <li
-                                className={`${
-                                    active === link.title[i18n.language]
-                                        ? "text-signature"
-                                        : "text-white"
-                                } font-poppins font-medium 
-            cursor-pointer text-[16px] z-40 flex items-center my-8`}
-                            >
-                                <img src={link.icon} alt={link.title[i18n.language]} className="w-[28px] h-[28px] mr-3"/>
-                                {link.title[i18n.language]}
-                            </li>
+
+                            <img alt="decorative" src={link.icon} width="22" height="22" aria-hidden="true" className="mr-3"/>
+                            {link.title[i18n.language]}
                         </a>
 
-                        <hr className="h-px bg-gray-200 border-0 dark:bg-gray-700" key={link.id + 2}/>
-                    </div>
+                        <hr className="h-px bg-gray-200 border-0 dark:bg-gray-700" />
+                    </li>
                 ))}
             </ul>
         </div>

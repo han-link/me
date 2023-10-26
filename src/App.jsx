@@ -22,7 +22,7 @@ export const App = () => {
                     </>
                 }/>
                 <Route path="imprint" element={<Imprint />} />
-                <Route path="privacypolicy" element={<PrivacyPolicy />} />
+                <Route path="privacy-policy" element={<PrivacyPolicy />} />
             </Routes>
         </BrowserRouter>
     )

@@ -1,3 +1,5 @@
+// noinspection HtmlUnknownAttribute
+
 import React from 'react';
 import { Tilt as Tilt } from 'react-tilt';
 import {motion} from 'framer-motion';
@@ -42,13 +44,13 @@ const About = () => {
     return (
         <>
             <motion.div variants={textVariant()}>
-                <p className="sm:text-[18px] text-[14px] text-tertiary uppercase tracking-wider">{t('about.caption')}</p>
+                <p className="sm:text-[18px] text-[14px] uppercase tracking-wider">{t('about.caption')}</p>
                 <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">{t('about.title')}</h2>
             </motion.div>
 
             <motion.p
                 variants={fadeIn("", "", 0.1, 1)}
-                className='mt-4 text-tertiary text-[17px] max-w-3xl leading-[30px]'
+                className='mt-4 text-red text-[17px] max-w-3xl leading-[30px]'
             >
                 {t('about.text')}
             </motion.p>

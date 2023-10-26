@@ -1,13 +1,5 @@
-import menu from './menu.svg'
-import close from './close.svg'
-import person from './file-person.svg'
-import project from './kanban.svg'
-import contact from './envelope.svg'
-import github from './github-mark.svg'
-import chevronDown from './chevron-down.svg'
-
-import web from './web.png'
-import backend from './backend.png'
+import web from './web.webp'
+import backend from './backend.webp'
 
 import css from './tech/css.svg'
 import docker from './tech/docker.svg'
@@ -22,17 +14,16 @@ import python from './tech/python.svg'
 import angular from './tech/angular.svg'
 import bootstrap from './tech/bootstrap.svg'
 
-import projectsScheduler from './projects/c_scheduler.png'
+import projectsScheduler from './projects/c_scheduler.webp'
 
 import us from './lang/us.svg'
 import de from './lang/de.svg'
 
-import logo from '../../public/favicon.webp'
+import user from './user.svg'
+import rocket from './rocket.svg'
+import envelope from './envelope.svg'
 
 export {
-    menu,
-    close,
-    person,
     web,
     backend,
     css,
@@ -47,12 +38,10 @@ export {
     python,
     angular,
     bootstrap,
-    project,
-    contact,
-    github,
     us,
     de,
-    chevronDown,
     projectsScheduler,
-    logo
+    user,
+    rocket,
+    envelope
 }
