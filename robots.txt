@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /imprint
+Disallow: /privacy-policy
+Disallow: /*.webp$
+Disallow: /*.svg$
+Disallow: /*.png$
+Disallow: /*.jpg$
+Disallow: /*.jpeg$
+
+User-agent: Googlebot-Image
+Disallow: /
