@@ -9,7 +9,7 @@
   "about": {
     "caption": "Einleitung",
     "title": "Über mich.",
-    "text": "Ich bin ein angehender Entwickler mit Erfahrung in TypeScript, JavaScript und Python sowie Fachwissen in Frameworks wie Node.js und Angular."
+    "text": "Ich bin ein angehender Entwickler mit Erfahrung in TypeScript, JavaScript und Python sowie Fachwissen in Frameworks wie Angular und der Node.js-Bibliothek."
   },
   "projects": {
     "caption": "Meine Arbeiten",
