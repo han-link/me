@@ -1,12 +1,13 @@
-import { SectionWrapper } from "../helper";
-import { technologies } from "../constants";
+import {SectionWrapper} from "../helper";
+import {technologies} from "../constants";
 
 const Tech = () => {
     return (
-        <div className='flex flex-row flex-wrap justify-center gap-10'>
+        <div className='grid grid-cols-2 md:flex flex-wrap justify-center gap-4'>
             {technologies.map((technology) => (
-                <a href={technology.link} key={technology.name}>
-                    <img className='h-28 p-6' src={technology.icon} alt={technology.name}/>
+                <a href={technology.link || "/"} key={technology.name} className="flex justify-center">
+                    <img className='h-28 p-6' width={technology.width} height={technology.height} src={technology.icon}
+                         alt={technology.name}/>
                 </a>
             ))}
         </div>

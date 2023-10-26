@@ -1,8 +1,8 @@
 import React from 'react';
-import {menu, close} from '../assets';
 import {navLinks} from '../constants';
 import {LanguageSwitcher} from './index';
 import {useTranslation} from "react-i18next";
+import {Bars3Icon, XMarkIcon} from "@heroicons/react/20/solid/index.js";
 
 export const Navbar = ({active, setActive, setIsOpen, isOpen}) => {
     const {i18n} = useTranslation();
@@ -42,12 +42,13 @@ export const Navbar = ({active, setActive, setIsOpen, isOpen}) => {
                     <LanguageSwitcher/>
                 </div>
                 <div className="md:hidden flex flex-1 justify-end items-center">
-                    <img
-                        src={isOpen ? close : menu}
-                        alt="menu"
-                        className="w-[28px] h-[28px] object-contain cursor-pointer"
-                        onClick={() => setIsOpen(!isOpen)}
-                    />
+                    {
+                        isOpen ?
+                        <XMarkIcon className="h-8 w-8 cursor-pointer" onClick={() => setIsOpen(!isOpen)}/>
+                        :
+                        <Bars3Icon className="h-8 w-8 cursor-pointer" onClick={() => setIsOpen(!isOpen)}/>
+                    }
+
                 </div>
             </div>
         </nav>

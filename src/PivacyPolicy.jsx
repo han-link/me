@@ -1,3 +1,5 @@
+// noinspection SpellCheckingInspection
+
 import React from 'react';
 
 export const PrivacyPolicy = () => {
@@ -11,7 +13,10 @@ export const PrivacyPolicy = () => {
                 className="hover:text-white cursor-pointer rounded-md px-3 py-2 hover:bg-white hover:bg-opacity-10 text-3xl"
                 onClick={goBack}
             >
-                <i className="bi bi-arrow-left"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                     stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75"/>
+                </svg>
             </button>
             <div className="w-fit mx-auto max-w-xl">
                 <h1 className="mb-6 text-5xl font-extrabold leading-none tracking-tight">Datenschutz&shy;erkl&auml;rung</h1>
@@ -91,6 +96,7 @@ export const PrivacyPolicy = () => {
                     Wir setzen folgende(n) Hoster ein:
                 </p>
                 <p className="mb-4">
+                    Herkel Media<br/>
                     Jonas Herkel<br/>
                     An der Au 3<br/>
                     74834 Elztal

@@ -14,3 +14,10 @@ i18n
         },
         resources: languageResources
     })
+    .then(() => {
+        console.log('i18next has been initialized!')
+        // Any other operations you want to perform after initialization
+    })
+    .catch((error) => {
+        console.error('Failed to initialize i18next:', error)
+    })

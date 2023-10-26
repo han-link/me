@@ -13,12 +13,12 @@ import {
     python,
     angular,
     bootstrap,
-    person,
-    project,
-    contact,
     us,
     de,
-    projectsScheduler
+    projectsScheduler,
+    user,
+    rocket,
+    envelope
 } from './assets'
 
 import translationEN from './locales/us/translation.json'
@@ -31,7 +31,7 @@ export const navLinks = [
             en: 'About',
             de: 'Über mich'
         },
-        icon: person
+        icon: user
     },
     {
         id: 'work',
@@ -39,7 +39,7 @@ export const navLinks = [
             en: 'Projects',
             de: 'Projekte'
         },
-        icon: project
+        icon: rocket
     },
     {
         id: 'contact',
@@ -47,7 +47,7 @@ export const navLinks = [
             en: 'Contact',
             de: 'Kontakt'
         },
-        icon: contact
+        icon: envelope
     }
 ]
 
@@ -74,7 +74,7 @@ export const footerLinks = [
             en: 'Privacy Policy',
             de: 'Datenschutzerklärung'
         },
-        link: 'privacypolicy'
+        link: '/privacy-policy'
     },
     {
         id: 'contact',
@@ -101,62 +101,83 @@ export const technologies = [
     {
         name: 'HTML 5',
         icon: html,
-        link: ''
+        width: 112,
+        height: 112
     },
     {
         name: 'CSS 3',
         icon: css,
-        link: ''
+        width: 112,
+        height: 112
     },
     {
         name: 'JavaScript',
         icon: javascript,
-        link: ''
+        width: 112,
+        height: 112
     },
     {
         name: 'TypeScript',
         icon: typescript,
-        link: 'https://www.typescriptlang.org/'
+        link: 'https://www.typescriptlang.org/',
+        width: 112,
+        height: 112
     },
     {
         name: 'Tailwind CSS',
         icon: tailwind,
-        link: 'https://tailwindcss.com/'
+        link: 'https://tailwindcss.com/',
+        width: 112,
+        height: 112
     },
     {
         name: 'Node JS',
         icon: nodejs,
-        link: 'https://nodejs.org/en'
+        link: 'https://nodejs.org/en',
+        width: 112,
+        height: 112
     },
     {
         name: 'MariaDb',
         icon: mariaDb,
-        link: 'https://mariadb.org/'
+        link: 'https://mariadb.org/',
+        width: 130,
+        height: 112
     },
     {
         name: 'git',
         icon: git,
-        link: 'https://git-scm.com/'
+        link: 'https://git-scm.com/',
+        width: 112,
+        height: 112
     },
     {
         name: 'docker',
         icon: docker,
-        link: 'https://www.docker.com/'
+        link: 'https://www.docker.com/',
+        width: 112,
+        height: 112
     },
     {
         name: 'Python',
         icon: python,
-        link: 'https://www.python.org/'
+        link: 'https://www.python.org/',
+        width: 112,
+        height: 112
     },
     {
         name: 'Angular',
         icon: angular,
-        link: 'https://angular.io/'
+        link: 'https://angular.io/',
+        width: 112,
+        height: 112
     },
     {
         name: 'Bootstrap 5',
         icon: bootstrap,
-        link: 'https://getbootstrap.com/'
+        link: 'https://getbootstrap.com/',
+        width: 130,
+        height: 112
     }
 ]
 
