@@ -1,6 +1,4 @@
 import {
-    web,
-    backend,
     css,
     docker,
     git,
@@ -18,7 +16,9 @@ import {
     projectsScheduler,
     user,
     rocket,
-    envelope
+    envelope,
+    code,
+    server
 } from './assets'
 
 import translationEN from './locales/us/translation.json'
@@ -89,11 +89,11 @@ export const footerLinks = [
 export const services = [
     {
         title: 'Web Developer',
-        icon: web
+        icon: code
     },
     {
         title: 'Backend Developer',
-        icon: backend
+        icon: server
     }
 ]
 

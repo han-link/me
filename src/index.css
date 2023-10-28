@@ -16,9 +16,28 @@ div#root{
     background: linear-gradient(180deg, rgba(22,25,37,1) 0%, rgb(15, 3, 44) 38%, rgb(36, 10, 58) 71%);
 }
 
+.flip-card {
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
 .card-gradient {
     background: rgb(22,25,37);
-    background: linear-gradient(0deg, rgba(13, 8, 26, 0.9) 0%, rgb(7, 4, 14, 0.9) 38%, rgb(13, 8, 26, 0.9) 100%);
+    background: linear-gradient(0deg, rgba(13, 8, 26) 0%, rgb(7, 4, 14) 38%, rgb(13, 8, 26) 100%);
 }
 
 .hash-span {
