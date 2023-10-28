@@ -50,7 +50,7 @@ export const LanguageSwitcher = () => {
                 leaveTo="transform opacity-0 scale-95"
             >
                 <Menu.Items
-                    className="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-primary shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                    className="absolute right-0 z-50 mt-2 origin-top-right rounded-md bg-primary shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                     <div className="py-1">
                         {languages.map(({code, label}) => (
                             <Menu.Item key={code} className="text-white hover:text-gray-500">
