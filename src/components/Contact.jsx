@@ -66,7 +66,7 @@ const Contact = () => {
 
     return (
         <motion.div
-            variants={slideIn("left", "tween", 0.2, 1)}
+            variants={slideIn("left", "tween", 0, 0.75)}
             className='flex-[0.75] card-gradient p-8 rounded-[5px] max-w-3xl mx-auto shadow-lg'
         >
             <p className="sm:text-[18px] text-[14px] text-tertiary uppercase tracking-wider">{t('contact.caption')}</p>

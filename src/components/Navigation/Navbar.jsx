@@ -2,9 +2,8 @@ import React, {useRef} from 'react';
 import {navLinks} from '../../constants.js';
 import {LanguageSwitcher} from '../index.js';
 import {useTranslation} from "react-i18next";
-import {Bars3Icon, XMarkIcon} from "@heroicons/react/20/solid/index.js";
 import {MenuToggle} from "./MenuToggle.jsx";
-import {motion, useCycle} from "framer-motion";
+import {motion} from "framer-motion";
 
 export const Navbar = ({active, setActive, setIsOpen, isOpen}) => {
     const {i18n} = useTranslation();
@@ -46,8 +45,9 @@ export const Navbar = ({active, setActive, setIsOpen, isOpen}) => {
                     <div className="hidden md:flex">
                         <LanguageSwitcher/>
                     </div>
-
-                    <MenuToggle toggle={() => setIsOpen(!isOpen)}/>
+                    <div className="md:hidden">
+                        <MenuToggle toggle={() => setIsOpen(!isOpen)}/>
+                    </div>
                 </div>
             </nav>
         </motion.div>
