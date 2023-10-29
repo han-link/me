@@ -6,7 +6,7 @@ import {fadeIn, slideIn, textVariant} from "../utils/motion.js";
 import {SectionWrapper} from "../helper";
 import {useTranslation} from "react-i18next";
 
-const ServiceCard = ({index, title, icon}) => {
+const ServiceCard = ({ title, icon}) => {
     const [isFlipped, setIsFlipped] = useState(false);
     const [isAnimating, setIsAnimating] = useState(false);
 
@@ -65,8 +65,8 @@ const About = () => {
 
                         variants={slideIn("down", "tween", 0.2, 1)}
             >
-                {services.map((service, index) => (
-                    <ServiceCard key={service.title} index={index} {...service} />
+                {services.map((service) => (
+                    <ServiceCard key={service.title} {...service} />
                 ))}
             </motion.div>
 

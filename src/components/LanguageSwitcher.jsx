@@ -7,10 +7,6 @@ import {Menu, Transition} from '@headlessui/react'
 
 import {ChevronDownIcon} from "@heroicons/react/24/solid/index.js";
 
-function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-}
-
 export const LanguageSwitcher = () => {
     const {i18n} = useTranslation();
 

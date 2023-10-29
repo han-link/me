@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import {navLinks} from '../../constants.js';
 import {LanguageSwitcher} from '../index.js';
 import {useTranslation} from "react-i18next";
