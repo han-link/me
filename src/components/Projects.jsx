@@ -7,6 +7,7 @@ import {github} from "../assets"
 import {fadeIn, textVariant} from "../utils/motion";
 import {useTranslation} from "react-i18next";
 import i18n from "i18next";
+import {useEffect, useState} from "react";
 
 const ProjectCard = ({
                          index,
@@ -16,11 +17,30 @@ const ProjectCard = ({
                          image,
                          source_code_link,
                      }) => {
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+    const updateIsMobile = () => {
+        setIsMobile(window.innerWidth <= 768);
+    }
+
+    useEffect(() => {
+        // Initially set the isMobile value
+        updateIsMobile();
+
+        // Add a listener to update the isMobile value when the window is resized
+        window.addEventListener('resize', updateIsMobile);
+
+        // Cleanup the listener when the component is unmounted
+        return () => {
+            window.removeEventListener('resize', updateIsMobile);
+        }
+    }, []);
+
     return (
-        <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+        <motion.div variants={fadeIn("up", "spring", index * 0.5, 2)}>
             <Tilt
                 options={{
-                    max: 45,
+                    max: isMobile ? 0 : 45,
                     scale: 1,
                     speed: 450,
                 }}

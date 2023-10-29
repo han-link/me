@@ -1,6 +1,3 @@
-import web from './web.webp'
-import backend from './backend.webp'
-
 import css from './tech/css.svg'
 import docker from './tech/docker.svg'
 import git from './tech/git.svg'
@@ -23,10 +20,10 @@ import user from './user.svg'
 import rocket from './rocket.svg'
 import envelope from './envelope.svg'
 import github from './github-mark-white.svg'
+import code from './code-bracket.svg'
+import server from './server-stack.svg'
 
 export {
-    web,
-    backend,
     css,
     docker,
     git,
@@ -45,5 +42,7 @@ export {
     user,
     rocket,
     envelope,
-    github
+    github,
+    code,
+    server
 }

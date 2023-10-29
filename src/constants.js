@@ -1,6 +1,4 @@
 import {
-    web,
-    backend,
     css,
     docker,
     git,
@@ -18,7 +16,9 @@ import {
     projectsScheduler,
     user,
     rocket,
-    envelope
+    envelope,
+    code,
+    server, github
 } from './assets'
 
 import translationEN from './locales/us/translation.json'
@@ -86,14 +86,31 @@ export const footerLinks = [
     }
 ]
 
+export const footerSocialIcons = [
+    {
+        id: 1,
+        link: 'https://github.com/han-link',
+        icon: github,
+        description: 'link to my github account'
+    }
+]
+
 export const services = [
     {
         title: 'Web Developer',
-        icon: web
+        icon: code,
+        text: {
+            en: 'Passionate about weaving the web with code and creativity. Dive into my projects and experience my journey.',
+            de: 'Ich entwickle Websites mit Code und Kreativität. Schau dir meine Projekte an und sieh, was ich bisher geschaffen habe.'
+        }
     },
     {
         title: 'Backend Developer',
-        icon: backend
+        icon: server,
+        text: {
+            de: 'Im Hintergrund sorgt mein Code dafür, dass Webanwendungen reibungslos laufen und stabil sind. Schau dir meine Projekte an und entdecke, was ich gerne mache.',
+            en: 'Behind the scenes, my code keeps web applications running smoothly and stable. Take a look at my projects to see what I like to do.'
+        }
     }
 ]
 

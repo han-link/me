@@ -6,6 +6,7 @@ import {SectionWrapper} from "../helper";
 import {slideIn} from "../utils/motion";
 import {useTranslation} from "react-i18next";
 
+
 const Contact = () => {
     const { t } = useTranslation();
     const formRef = useRef();
@@ -66,7 +67,7 @@ const Contact = () => {
 
     return (
         <motion.div
-            variants={slideIn("left", "tween", 0.2, 1)}
+            variants={slideIn("left", "tween", 0, 0.75)}
             className='flex-[0.75] card-gradient p-8 rounded-[5px] max-w-3xl mx-auto shadow-lg'
         >
             <p className="sm:text-[18px] text-[14px] text-tertiary uppercase tracking-wider">{t('contact.caption')}</p>
@@ -111,13 +112,18 @@ const Contact = () => {
                         required />
                 </label>
 
-                <button
+                <motion.button
                     type='submit'
-                    className='relative bg-signature py-3 px-8 rounded-[5px] outline-none w-fit text-white font-bold shadow-md shadow-primary'
-                >
-                    <span className="absolute inset-0 animate-ping-slow border-2 rounded-[5px] border-signature opacity-75"></span>
+                    animate={{ scale: [1, 1.2, 1] }}
+                    transition={{
+                        duration: 2,
+                        repeat: Infinity,
+                        repeatType: "loop",
+                    }}
+                    whileTap={{ scale: 0.8 }}
+                    className='relative bg-signature py-3 px-8 rounded-[5px] outline-none w-fit text-white font-bold shadow-md shadow-primary'>
                     {loading ? t('contact.form.submit.text-waiting') : t('contact.form.submit.text-send')}
-                </button>
+                </motion.button>
 
 
             </form>
