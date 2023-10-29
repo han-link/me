@@ -18,7 +18,7 @@ import {
     rocket,
     envelope,
     code,
-    server
+    server, github
 } from './assets'
 
 import translationEN from './locales/us/translation.json'
@@ -83,6 +83,15 @@ export const footerLinks = [
             de: 'Kontakt'
         },
         link: '/#contact'
+    }
+]
+
+export const footerSocialIcons = [
+    {
+        id: 1,
+        link: 'https://github.com/han-link',
+        icon: github,
+        description: 'link to my github account'
     }
 ]
 
