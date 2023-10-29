@@ -89,11 +89,19 @@ export const footerLinks = [
 export const services = [
     {
         title: 'Web Developer',
-        icon: code
+        icon: code,
+        text: {
+            en: 'Passionate about weaving the web with code and creativity. Dive into my projects and experience my journey.',
+            de: 'Ich entwickle Websites mit Code und Kreativität. Schau dir meine Projekte an und sieh, was ich bisher geschaffen habe.'
+        }
     },
     {
         title: 'Backend Developer',
-        icon: server
+        icon: server,
+        text: {
+            de: 'Im Hintergrund sorgt mein Code dafür, dass Webanwendungen reibungslos laufen und stabil sind. Schau dir meine Projekte an und entdecke, was ich gerne mache.',
+            en: 'Behind the scenes, my code keeps web applications running smoothly and stable. Take a look at my projects to see what I like to do.'
+        }
     }
 ]
 

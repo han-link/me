@@ -5,8 +5,9 @@ import {services} from "../constants";
 import {fadeIn, slideIn, textVariant} from "../utils/motion.js";
 import {SectionWrapper} from "../helper";
 import {useTranslation} from "react-i18next";
+import i18n from "i18next";
 
-const ServiceCard = ({ title, icon}) => {
+const ServiceCard = ({ title, icon, text}) => {
     const [isFlipped, setIsFlipped] = useState(false);
     const [isAnimating, setIsAnimating] = useState(false);
 
@@ -37,8 +38,7 @@ const ServiceCard = ({ title, icon}) => {
                     </h3>
                 </div>
                 <div className="flip-card-back card-gradient rounded-[5px] w-full h-full p-4">
-                    <h1>Card back</h1>
-                    <p>CBA</p>
+                    <p>{text[i18n.language]}</p>
                 </div>
             </motion.div>
         </div>
