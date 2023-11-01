@@ -35,8 +35,8 @@ export const Footer = () => {
                     ))}
                 </ul>
                 <hr className="mb-6 mt-4 border-gray-700"/>
-                <span className="block text-sm text-gray-500 text-center dark:text-gray-400">© 2023 <a
-                    href="https://www.hannes-link.de/" className="hover:underline">hannes-link.de</a>. All Rights Reserved.</span>
+                <span className="block text-sm text-gray-500 text-center dark:text-gray-400"><a className="hover:underline" href="hannes-link.de">hannes-link.de</a> &copy; 2023 by <a
+                    href="https://github.com/han-link" className="hover:underline"> Hannes Link</a>. All Rights Reserved.</span>
             </div>
         </footer>
     )
